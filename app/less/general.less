@@ -1,0 +1,217 @@
+@foot1: url(../images/foot1.png) center center no-repeat;
+@foot2: url(../images/foot2.png) center center no-repeat;
+@foot3: url(../images/foot3.png) center center no-repeat;
+@bg-body-img: url(../images/back1.jpg);
+@cursor-img: url(../images/cursor.png);
+
+
+body{
+	font-family: Tahoma, Geneva, sans-serif;
+	background-image: @bg-body-img;
+	color: @white;
+	box-sizing: border-box;
+	padding:0px;
+	margin: 0px;
+	cursor: @cursor-img, default;
+}
+.content{
+	width: 1000px;
+	background-color: @black-with-opacity;
+	margin:0 auto;
+	padding-top: 10px;
+	padding-left: 50px;
+}
+header {
+	margin: 0 50px 0 10px;
+	padding: 0px;
+	background-color: darken(@black-with-opacity, 10%);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.language-site{
+	display: inline-block;
+	width: 440px;
+	line-height: 30px;
+	text-align: right;
+	a {
+		font-size: 10px;
+		color:@color-menu;
+	}
+}
+.time-work {
+	width: 500px;
+	float: left;
+	font-size: 12px;
+	line-height: 30px;
+}
+body a.active-a{
+	text-decoration: none;
+	color:@yellow-hover;
+}
+header ul{
+	list-style: none;
+}
+.foto-foot-first {
+	background: @foot1;
+	.foots-general;
+}
+.first-foot1 {
+	.foots-position (0px,0px, 120deg);
+}
+.first-foot2 {
+	.foots-position (100px,100px, 60deg);
+}
+.first-foot3 {
+	.foots-position (50px,1200px,120deg);
+}
+.first-foot4 {
+	.foots-position (120px, 1200px, 50deg);
+}
+.first-foot5 {
+	.foots-position (300px, 1120px, 20deg);
+}
+.first-foot6 {
+	.foots-position (500px, 1200px, 125deg);
+}
+.first-foot7 {
+	.foots-position (100px, 1000px, 125deg);
+}
+.first-foot8 {
+	.foots-position (100px, 2410px, 120deg);
+}
+.first-foot9 {
+	.foots-position (900px, 3400px, 125deg);
+}
+.first-foot10 {
+	.foots-position (600px, 3400px, 200deg);
+}
+.foto-foot-second {
+	background: @foot2;
+	.foots-general;
+}
+.second-foot1 {
+	.foots-position (20px, 100px, -30deg);
+}
+.second-foot2 {
+	.foots-position (180px, 0px, 20deg);
+}
+.second-foot3 {
+	.foots-position (70px, 1130px, 20deg);
+}
+.second-foot4 {
+	.foots-position (500px, 70px, 20deg);
+}
+.second-foot5 {
+	.foots-position (300px, 50px, -10deg);
+}
+.second-foot6 {
+	.foots-position (400px,1200px, 40deg);
+}
+.foto-foot-third {
+	background: @foot3;
+	.foots-general;
+}
+.third-foot1 {
+	.foots-position (70px,40px, 240deg);
+}
+.third-foot2 {
+	.foots-position (400px,20px, 100deg);
+}
+.third-foot3 {
+.foots-position (250px,100px, 220deg);
+}
+.third-foot4 {
+.foots-position (-10px,1150px, -100deg);
+}
+.third-foot5 {
+	.foots-position (200px,1170px, 40deg);
+}
+.third-foot6 {
+	.foots-position (300px,1220px, 295deg);
+}
+
+.menu-list li.first-list{
+	display: inline-block;
+}
+header ul.menu-list{
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+.menu-list .first-list>a{
+	text-decoration: none;
+	color:@white;
+	font-size: 15px;
+	font-weight: bold;
+	padding:20px 20px;
+	line-height: 60px;
+	background: @color-menu;
+	margin-left:-5px;
+	border-left: 2px solid darken(@color-menu, 10%);
+}
+.menu-list .about-us a{
+	margin: 0px;
+}
+.menu-list .first-list>a:hover{
+	background: @yellow-hover;
+}
+ul.menu-list li ul{
+	display: none;
+}
+ul.menu-list li:hover ul {
+	font-size: 12px;
+	display: block;
+	position: absolute;
+	width: 200px;
+	background-color: @color-bg-submenu;
+	margin: 0px;
+	padding: 10px;
+	line-height: 30px;
+	a {
+		.properties-submenu-unactive;
+	}
+}
+ul.menu-list li.first-list ul.submenu-second li ul.submenu-third{
+	display: none;
+}
+ul.menu-list li:hover.first-list ul.submenu-second li:hover ul.submenu-third{
+	font-size: 12px;
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 220px;
+	width: 200px;
+	background-color: @color-bg-submenu;
+	margin: 0px;
+	padding: 10px;
+	line-height: 30px;
+}
+ul.menu-list li:hover ul a{
+	.properties-submenu-unactive;
+}
+.menu-list li a.gr-wo:hover {
+	color: @color-menu-name-hover;
+}
+.menu-list li:first-child.first-list>a{
+	border: none;
+	border-top-left-radius: 10px;
+}
+.menu-list li:last-child.first-list>a{
+	border-top-right-radius: 10px;
+	background: @color-dyno;
+}
+header .menu-list li ul a{
+	.properties-submenu;
+	&:hover{
+		.properties-submenu;
+		color: @yellow-hover;
+	}
+}
+header .menu-list li ul.menu-about-us a{
+	margin-left: -10px;
+}
+header .menu-list li.dynopark ul {
+	width:90px;
+	a:hover{
+		width: 90px;
+	}
+}
