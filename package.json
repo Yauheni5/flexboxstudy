@@ -1,7 +1,7 @@
 {
   "name": "zoo",
   "version": "1.0.0",
-  "description": "===================== # ZOOMinsk DEMO: [Сайт Минского ЗООпарка](https://yauheni5.github.io/flexbox/)",
+  "description": "===================== # ZOOMinsk DEMO: [Сайт Минского ЗООпарка](https://yauheni5.github.io/flexboxstudy/)",
   "main": "index.js",
   "dependencies": {
     "pkg": "^3.0.0-beta.25"
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/Yauheni5/flexbox)"
+    "url": "(https://github.com/Yauheni5/flexboxstudy)"
   },
   "author": "KING",
   "license": "ISC"
