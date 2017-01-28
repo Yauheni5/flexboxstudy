@@ -1,3 +1,3 @@
 =====================
 # ZOOMinsk
-DEMO: [Сайт Минского ЗООпаркаx созданный при помощи флексбокс](https://yauheni5.github.io/flexboxstudy/)
+DEMO: [Сайт Минского ЗООпарка созданный при помощи флексбокс](https://yauheni5.github.io/flexboxstudy/)
