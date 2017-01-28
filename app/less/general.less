@@ -3,6 +3,7 @@
 @foot3: url(../images/foot3.png) center center no-repeat;
 @bg-body-img: url(../images/back1.jpg);
 @cursor-img: url(../images/cursor.png);
+@slider-img: url(../images/slider1.jpg);
 
 body {
 	margin:0;
@@ -48,6 +49,11 @@ ul {
 			}
 		}
 	}
+}
+header {
+	background-color: darken(@black-with-opacity, 10%);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 ul.menu-list {
 	margin: 0;
@@ -100,15 +106,24 @@ ul.menu-list {
 					width: 100%;
 					line-height: 20px;
 					padding: 5px 0px;
+					a {
+						color:@color-menu;
+					}
 					&:hover {
 						width: 100%;
 						background-color: @color-menu;
 						line-height: 20px;
+						a {
+							color:@yellow-hover;
+						}
 					}
 				}
 			}
 		}
 	}
+}
+li:hover a.gr-wo{
+	color: @color-bg-submenu;
 }
 
 .foto-foot-first {
