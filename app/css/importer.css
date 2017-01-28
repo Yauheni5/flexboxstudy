@@ -48,6 +48,9 @@ ul.menu-list {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+ul.menu-list li.dynopark {
+  width: 113px;
+}
 ul.menu-list li:first-child.first-list {
   border: none;
   border-top-left-radius: 10px;
@@ -71,11 +74,30 @@ ul.menu-list li.first-list ul.submenu-second ul.submenu-third {
 ul.menu-list li:hover.first-list {
   background-color: #dfd73a;
 }
+ul.menu-list li:hover.first-list ul.submenu-second.dynopark {
+  width: 148px;
+}
 ul.menu-list li:hover.first-list ul.submenu-second {
+  font-size: 12px;
   display: block;
+  position: absolute;
+  width: 200px;
+  background-color: rgba(28, 112, 28, 0.9);
+  margin: -3px 0px 0px -20px;
+  padding: 0px;
+  line-height: 30px;
+  top: 100px;
 }
 ul.menu-list li:hover.first-list ul.submenu-second li {
-  position: relative;
+  margin: 0px;
+  width: 100%;
+  line-height: 20px;
+  padding: 5px 0px;
+}
+ul.menu-list li:hover.first-list ul.submenu-second li:hover {
+  width: 100%;
+  background-color: #67a63d;
+  line-height: 20px;
 }
 .foto-foot-first {
   background: url(../images/foot1.png) center center no-repeat;

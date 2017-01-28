@@ -57,6 +57,9 @@ ul.menu-list {
 	justify-content:space-between;
 	flex-wrap:nowrap;
 	li{
+		&.dynopark {
+			width: 113px;
+			}
 		&:first-child.first-list{
 			border: none;
 			border-top-left-radius: 10px;
@@ -79,15 +82,35 @@ ul.menu-list {
 		}
 		&:hover.first-list {
 			background-color: @yellow-hover;
+			ul.submenu-second.dynopark {
+				width:148px;
+			}
 			ul.submenu-second {
+				font-size: 12px;
 				display: block;
+				position: absolute;
+				width: 200px;
+				background-color: @color-bg-submenu;
+			  margin: -3px 0px 0px -20px;
+				padding:0px;
+				line-height: 30px;
+				top:100px;
 				li {
-					position: relative;
+					margin:0px;
+					width: 100%;
+					line-height: 20px;
+					padding: 5px 0px;
+					&:hover {
+						width: 100%;
+						background-color: @color-menu;
+						line-height: 20px;
+					}
 				}
 			}
 		}
 	}
 }
+
 .foto-foot-first {
 	background: @foot1;
 	.foots-general;
