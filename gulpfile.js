@@ -15,7 +15,7 @@ gulp.task('less', function() {
 gulp.task('browserSync', function() {
 	browserSync({
 		server: {
-			baseDir: 'app'
+			baseDir: ''
 		},
 		notify:false
 	});

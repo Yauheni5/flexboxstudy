@@ -11,9 +11,9 @@ body {
 	background-image: @bg-body-img;
 	color:@white;
 	font-family: Tahoma, Geneva, sans-serif;
-    font-size: 13px;
-    text-align: center;
-    cursor: @cursor-img, default;
+  font-size: 13px;
+  text-align: center;
+  cursor: @cursor-img, default;
 }
 a {
 	text-decoration:none;
@@ -36,7 +36,7 @@ ul {
 	justify-content: space-between;
 	align-items:flex-start;
 	.time-work {
-		
+
 	}
 	.language-site {
 		font-size: 11px;
@@ -214,4 +214,35 @@ li:hover a.gr-wo{
 }
 .third-foot6 {
 	.foots-position (300px,1220px, 295deg);
+}
+
+//845px-1078px
+@media only screen and (min-width:845px) and (max-width: 1078px){
+	.foot-animals {
+		display: none;
+	}
+
+	.content {
+		width: 768px;
+	}
+
+	ul.menu-list li.first-list {
+		padding:10px; font-size: 12px;
+	}
+
+	.slider-img {
+		width: 768px;
+	}
+	ul.menu-news {
+		font-size: 12px;
+		li {
+			padding: 5px;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width:844px) {
+
 }
