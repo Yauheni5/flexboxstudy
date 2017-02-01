@@ -4,6 +4,7 @@
   "description": "===================== # ZOOMinsk DEMO: [Сайт Минского ЗООпарка](https://yauheni5.github.io/flexboxstudy/)",
   "main": "index.js",
   "dependencies": {
+    "browser-sync": "^2.18.7",
     "pkg": "^3.0.0-beta.25"
   },
   "devDependencies": {
@@ -11,7 +12,6 @@
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
     "build": "^0.1.4"
-
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
