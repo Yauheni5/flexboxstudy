@@ -230,7 +230,16 @@ li:hover a.gr-wo{
 	}
 
 	ul.menu-list li.first-list {
-		padding:10px; font-size: 12px;
+		padding:10px;
+		font-size: 12px;
+		&:hover ul.submenu-second {
+			margin-top: -26px;
+			margin-left: -10px;
+			&.dynopark {
+				width: 131px;
+			}
+
+		}
 	}
 
 	.slider-img {
@@ -238,8 +247,13 @@ li:hover a.gr-wo{
 	}
 	ul.menu-news {
 		font-size: 12px;
+
 		li {
+			display: flex;
+			align-items:center;
+			justify-content:center;
 			padding: 5px;
+
 		}
 	}
 }
