@@ -341,12 +341,17 @@ li:hover a.gr-wo {
   }
   ul.menu-list {
     flex-wrap: wrap;
-    justify-content: flex-start;
     padding: 0px;
     margin: 0px;
   }
   ul.menu-list li {
     display: flex;
+    min-width: 100px;
+    justify-content: center;
     flex-grow: 1;
+  }
+  ul.menu-list li.first-list {
+    border-left: none;
+    border-radius: none;
   }
 }
