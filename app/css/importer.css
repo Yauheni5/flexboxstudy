@@ -337,7 +337,7 @@ li:hover a.gr-wo {
     width: 90%;
   }
   .slider-img {
-    background-size: 90%;
+    width: auto;
   }
   ul.menu-list {
     flex-wrap: wrap;
@@ -347,6 +347,6 @@ li:hover a.gr-wo {
   }
   ul.menu-list li {
     display: flex;
-    flex-grow: 4;
+    flex-grow: 1;
   }
 }
