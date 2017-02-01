@@ -329,3 +329,24 @@ li:hover a.gr-wo {
     padding: 5px;
   }
 }
+@media only screen and (min-width: 10px) and (max-width: 844px) {
+  .foot-animals {
+    display: none;
+  }
+  .content {
+    width: 90%;
+  }
+  .slider-img {
+    background-size: 90%;
+  }
+  ul.menu-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+  }
+  ul.menu-list li {
+    display: flex;
+    flex-grow: 4;
+  }
+}

@@ -232,19 +232,23 @@ li:hover a.gr-wo{
 	ul.menu-list li.first-list {
 		padding:10px;
 		font-size: 12px;
+
 		&:hover ul.submenu-second {
 			margin-top: -26px;
 			margin-left: -10px;
+
 			&.dynopark {
 				width: 131px;
-			}
 
+			}
 		}
 	}
 
 	.slider-img {
 		width: 768px;
+
 	}
+
 	ul.menu-news {
 		font-size: 12px;
 
@@ -260,6 +264,29 @@ li:hover a.gr-wo{
 
 
 
-@media only screen and (max-width:844px) {
+@media only screen and (min-width:10px) and (max-width:844px){
+	.foot-animals {
+		display: none;
+	}
+	.content {
+		width: 90%;
+	}
+	.slider-img {
+		background-size: 90%;
+
+	}
+
+	ul.menu-list {
+		flex-wrap:wrap;
+		justify-content:flex-start;
+		padding: 0px;
+		margin: 0px;
+		li{
+			display: flex;
+			flex-grow:4;
+		}
+	}
 
 }
+
+
