@@ -1,5 +1,6 @@
 .slider-img {
   background-image: url(../images/slider1.jpg);
+  background-repeat: no-repeat;
   margin-top: 20px;
   height: 400px;
   width: 1000px;
@@ -304,6 +305,7 @@ li:hover a.gr-wo {
   }
   .slider-img {
     width: 100%;
+    background-size: contain;
   }
   .foot-animals {
     display: none;
