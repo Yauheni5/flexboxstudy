@@ -258,7 +258,9 @@ li:hover a.gr-wo{
 }
 
 @media only screen and (min-width: 1px) and (max-width: 768px) {
-
+	.content{
+		max-width: 758px;
+	}
 	ul.menu-list {
 		display: flex;
 		flex-wrap:wrap;
@@ -284,10 +286,13 @@ li:hover a.gr-wo{
 			}
 		}
 	}
-	ul.menu-list li:hover.first-list ul.submenu-second {
-		top:115px;
-		left: 45px;
-		&:last-child {
+	ul.menu-list li:hover.first-list {
+		ul.submenu-second{
+			max-width: 150px;
+		}
+		&:nth-child(n+5) ul.submenu-second{
+			top: 115px;
+
 		}
 	}
 }
@@ -310,7 +315,7 @@ li:hover a.gr-wo{
 			}
 		}
 	}
-	ul.menu-list li:hover.first-list ul.submenu-second {
+	pxul.menu-list li:hover.first-list ul.submenu-second {
 		top:151px;
 	}
 }
@@ -354,7 +359,79 @@ li:hover a.gr-wo{
 		top:185px;
 	}
 }
-@media only screen and (min-width: 1px) and (max-width: 320px) {}
+@media only screen and (min-width: 1px) and (max-width: 414px) {
+	ul.menu-list li:hover.first-list {
+		ul.submenu-second{
+			max-width: 147px;
+		}
+		&:nth-child(-n+8) ul.submenu-second{
+			top: 185px;
+		}
 
-
-
+		&:nth-child(-n+6) ul.submenu-second{
+			top: 150px;
+		}
+		&:nth-child(-n+4) ul.submenu-second{
+			top: 115px;
+		}
+		&:nth-child(-n+2) ul.submenu-second{
+			top: 80px;
+		}
+	}
+}
+@media only screen and (min-width: 1px) and (max-width: 360px) {
+	ul.menu-list li{
+		&.first-list{
+			min-width: 200px;
+			&:first-child {
+				border-top-right-radius: 10px;
+			}
+			&:nth-child(2) {
+				border-top-right-radius: 0px;
+			}
+		}
+	}
+	ul.menu-list li:hover.first-list ul.submenu-second {
+		max-width:200px;
+	}
+	ul.menu-list li:hover {
+		&.first-list {
+			&:first-child {
+				ul.submenu-second {
+					top: 92px;
+				}
+			}
+			&:nth-child(2) {
+				ul.submenu-second {
+					top: 129px;
+				}
+			}
+			&:nth-child(3) {
+				ul.submenu-second {
+					top: 163px;
+				}
+			}
+			&:nth-child(4) {
+				ul.submenu-second {
+					top: 202px;
+				}
+			}
+			&:nth-child(5) {
+				ul.submenu-second {
+					top: 236px;
+				}
+			}
+			&:nth-child(6) {
+				ul.submenu-second {
+					top: 274px;
+				}
+			}
+			&:nth-child(8) {
+				ul.submenu-second {
+					top: 347px;
+					width: 200px;
+				}
+			}
+		}
+	}
+}
